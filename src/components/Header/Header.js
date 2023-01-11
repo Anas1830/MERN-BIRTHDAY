@@ -6,29 +6,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import './Header.css';
+
 
 const Header = () => {
   return (
    
-        <Navbar bg="primary" expand="lg" variant="dark">
+        <Navbar className='navbar' bg="primary" expand="lg" variant="dark">
           <Container >
-            <Navbar.Brand >
+            {/* <Navbar.Brand >
                 <Link to="/">Birthday Scheduling App</Link>
                 
-                </Navbar.Brand>
+                </Navbar.Brand> */}<Link to="/"><a class="navbar-brand" href="#">Bithday Scheduling App</a></Link>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-                <Nav className='m-auto'>
-                <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
                 
-              </Form>
-                </Nav>
               <Nav
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: '100px' }}
