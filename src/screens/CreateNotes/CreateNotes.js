@@ -44,7 +44,8 @@ const handleSubmit = (e) => {
         message:event.message,
 
     }
-    axios.post("https://mernapp-backend.onrender.com/api/create-schedule",newEvent)
+    axios.post("https://mern-backend-95c2.onrender.com/api/create-schedule",newEvent)
+    
 
     setEvent({
         name:"",

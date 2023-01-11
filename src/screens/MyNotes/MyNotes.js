@@ -15,7 +15,7 @@ const [notes, setNotes] = useState([])
 
 
 const fetchNotes = async() => {
-  const { data }= await axios.get("https://mernapp-backend.onrender.com/api/list")
+  const { data }= await axios.get("https://mern-backend-95c2.onrender.com/api/list")
    
   setNotes(data)
 };
@@ -23,7 +23,7 @@ const fetchNotes = async() => {
 const deleteEvent = async (id) => {
   
   try{
-   await  axios.delete('https://mernapp-backend.onrender.com/api/delete-event/'+id)
+   await  axios.delete('https://mern-backend-95c2.onrender.com/api/delete-event/'+id)
   }catch(err ){
     console.log(err)
   }
@@ -33,7 +33,7 @@ const sendMail = async(id) =>
 {
   try{
     console.log("id ==> ", id)
-    await axios.post('https://mernapp-backend.onrender.com/api/send/'+id)
+    await axios.post('https://mern-backend-95c2.onrender.com/api/send/'+id)
   }catch(err){
     console.log(err)
   }
